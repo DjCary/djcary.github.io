@@ -1,0 +1,72 @@
+---
+layout: page
+---
+
+    <!-- Slider Start -->
+<section id="global-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="block">
+                    <h1>Hi I'm Dan.</h1>
+                    <p>I’m a product manager @ Google who likes to make stuff in my free time.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    <!-- Portfolio Start -->
+<section id="portfolio-work">
+    <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="block">
+              <div class="portfolio-menu">
+                <ul>
+                    <li class="filter" data-filter="all">Everything</li>
+                    {% for cat in site.categories %}
+                    <li class="filter" data-filter=".{{ cat[0] }}">{{ cat[0] }}</li>
+                    {% endfor %}
+                </ul>
+              </div>
+              <div class="portfolio-content">
+                <ul id="portfolio-content-active">
+                  {% for post in site.posts %}
+                  <li class="mix {{ post.categories }}">
+                    <a href="{{ post.url }}">
+                      <img src="{{ site.baseurl }}/img/portfolio/{{ post.teaserimage }}" alt="{{ post.heroalt }}">
+                      <div class="overlay">
+                        <div class="col-1"></div>
+                        <div class="col-11">
+                          <div class="position-center">
+                            <h2>{{ post.title }}</h2>
+                            <p>{{ post.subtitle }} </p>
+                          </div>
+                        </div>
+                        <div class="col-1"></div>
+                      </div>
+                    </a>
+                  </li>
+                  {% endfor %}
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+</section>
+
+<!-- Call to action Start -->
+<section id="call-to-action">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="block">
+          <h2>Get in touch with me.</h2>
+          <p>I don't always responds and when I do it's often delayed. Reach out for whatever and I'll respond if it seems like a good fit.</p>
+          <a class="btn btn-default btn-call-to-action" href="{{ site.baseurl }}/contact" >Contact Dan</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
