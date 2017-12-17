@@ -37,7 +37,7 @@ permalink: /about/
       <div class="col-md-12">
         <div class="block">
           <h2>Get in touch with me.</h2>
-          <p>I don't always responds and when I do it's often delayed. Reach out for whatever and I'll respond if it seems like a good fit.</p>
+          <p>I don't always respond and when I do it's often delayed. Reach out for whatever and I'll respond if it seems like a good fit.</p>
           <a class="btn btn-default btn-call-to-action" href="{{ site.baseurl }}/contact" >Contact Dan</a>
         </div>
       </div>
