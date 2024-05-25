@@ -49,6 +49,18 @@
                         <clipPath id="clip-circle">
                             <circle cx="0" cy="0" r="80" />
                         </clipPath>
+
+                        <!-- Define animated gradient -->
+                        <linearGradient id="animated-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" stop-color="rgb(167, 58, 58)">
+                                <animate attributeName="stop-color" values="rgb(167, 58, 58);rgb(183, 108, 58);rgb(167, 58, 58)" dur="5s"
+                                    repeatCount="indefinite" />
+                            </stop>
+                            <stop offset="100%" stop-color="rgb(183, 108, 58)">
+                                <animate attributeName="stop-color" values="rgb(183, 108, 58);rgb(244, 234, 143);rgb(183, 108, 58)" dur="5s"
+                                    repeatCount="indefinite" />
+                            </stop>
+                        </linearGradient>
                     </defs>
             
                     <!-- Background circle with blur -->

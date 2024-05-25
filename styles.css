@@ -2,8 +2,8 @@
     --red: rgb(167, 58, 58);
     --orange: rgb(183, 108, 58);
     --yellow: rgb(244, 234, 143);
-    --stroke-color: rgb(24, 24, 24);
-    --fill-color: rgb(71, 71, 71);
+    --stroke-color: rgb(29, 17, 17);
+    --fill-color: rgb(3, 2, 1);
 }
 
 @keyframes background-pan {
@@ -266,14 +266,14 @@ a:hover {
 }
 
 .center-circle {
-    fill: var(--stroke-color, darkgrey);
-    stroke: var(--stroke-color, darkgrey);
+    fill: url(#animated-gradient);
+    stroke: url(#animated-gradient);
     stroke-width: 2;
 }
 
 .petal {
     fill: transparent;
-    stroke: var(--stroke-color, darkgrey);
+    stroke: url(#animated-gradient);
     stroke-width: 2;
     filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.5));
 }
@@ -309,21 +309,21 @@ a:hover {
 }
 
 .group-1 {
-    animation: rotate-slow 20s linear infinite;
+    animation: rotate-slow 30s linear infinite;
 }
 
 .group-2 {
-    animation: rotate-medium 15s linear infinite;
+    animation: rotate-medium 24s linear infinite;
 }
 
 .group-3 {
-    animation: rotate-medium 12s linear infinite;
+    animation: rotate-medium 16s linear infinite;
 }
 
 .group-4 {
-    animation: rotate-fast 10s linear infinite;
+    animation: rotate-fast 12s linear infinite;
 }
 
 .group-5 {
-    animation: rotate-fast 5s linear infinite;
+    animation: rotate-fast 10s linear infinite;
 }
