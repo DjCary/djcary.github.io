@@ -1,0 +1,170 @@
+:root {
+    --red: rgb(167, 58, 58);
+    --orange: rgb(183, 108, 58);
+    --yellow: rgb(244, 234, 143);
+}
+
+@keyframes background-pan {
+    from {
+        background-position: 0% center;
+    }
+
+    to {
+        background-position: -200% center;
+    }
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: black;
+    color: white;
+}
+
+header {
+    padding: 1em;
+    text-align: right;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 1em;
+}
+
+a {
+    color: white;
+    text-decoration: underline 0.15em rgba(0, 0, 0, 1);
+    text-underline-offset: 0.2em;
+    transition: text-decoration-color 300ms, text-underline-offset 300ms;
+}
+
+a:hover {
+    text-decoration-color: rgb(203, 203, 255);
+    color: rgb(203, 203, 255);
+    text-underline-offset: 0.2em;
+}
+
+.emoji {
+    font-family: "Noto Color Emoji", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.intro {
+    text-align: center;
+    padding: 2em;
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+@media (min-width: 1200px) {
+    .intro h1 {
+        font-size: 2em;
+        /* Larger font size for large screens */
+    }
+}
+
+@media (min-width: 800px) and (max-width: 1199px) {
+    .intro h1 {
+        font-size: 3em;
+        /* Medium font size for medium screens */
+    }
+}
+
+@media (max-width: 799px) {
+    .intro h1 {
+        font-size: 2.5em;
+        /* Smaller font size for small screens */
+    }
+}
+
+.intro h1 {
+    font-size: clamp(1.5em, 4vw, 5em);
+    /* Responsive font size based on viewport width */
+    line-height: 1.5em;
+    display: inline-block;
+    position: relative;
+    font-weight: 200;
+}
+
+
+.name-text {
+    font-family: "Bevan", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    animation: background-pan 10s linear infinite;
+        background: linear-gradient(to right,
+                var(--red),
+                var(--orange),
+                var(--yellow),
+                var(--red));
+        background-size: 200%;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        white-space: nowrap;
+}
+
+.leader-text {
+    font-family: "Codystar";
+    animation: glow 2s infinite alternate;
+}
+
+@keyframes glow {
+    to {
+        text-shadow: 4px 4px 4px rgba(255, 217, 0, 0.548);
+    }
+}
+
+.company-text {
+        font-family: "Style Script", cursive;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+.tech-text {
+    font-family: "Nabla", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+        "EDPT" 001,
+        "EHLT" 21;
+}
+
+.google-text {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.google-blue {
+    color: #4285f4;
+}
+
+.google-red {
+    color: #ea4335;
+}
+
+.google-yellow {
+    color: #fbbc05;
+}
+
+.google-green {
+    color: #34a853;
+}
+
+.details {
+    padding: 2em;
+    line-height: 1.5em;
+    text-align: left;
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
+}
