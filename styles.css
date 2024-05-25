@@ -57,10 +57,10 @@ a:hover {
 }
 
 .intro {
-    text-align: center;
-    padding: 2em;
+    text-align: left;
+    padding: 1em;
     width: 80%;
-    max-width: 1200px;
+    max-width: 1300px;
     margin: 0 auto;
 }
 
@@ -86,7 +86,7 @@ a:hover {
 }
 
 .intro h1 {
-    font-size: clamp(1.5em, 4vw, 5em);
+    font-size: clamp(2.5em, 4.5vw, 5em);
     /* Responsive font size based on viewport width */
     line-height: 1.5em;
     display: inline-block;
@@ -126,6 +126,7 @@ a:hover {
         font-family: "Style Script", cursive;
         font-weight: 400;
         font-style: normal;
+        white-space: nowrap;
     }
 
 .tech-text {
@@ -136,6 +137,11 @@ a:hover {
     font-variation-settings:
         "EDPT" 001,
         "EHLT" 21;
+    white-space: nowrap;
+}
+
+.keep-together {
+    white-space: nowrap;
 }
 
 .google-text {
@@ -161,10 +167,10 @@ a:hover {
 }
 
 .details {
-    padding: 2em;
+    padding: 1em;
     line-height: 1.5em;
     text-align: left;
     width: 80%;
-    max-width: 800px;
+    max-width: 1300px;
     margin: 0 auto;
 }
