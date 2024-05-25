@@ -2,6 +2,8 @@
     --red: rgb(167, 58, 58);
     --orange: rgb(183, 108, 58);
     --yellow: rgb(244, 234, 143);
+    --stroke-color: rgb(24, 24, 24);
+    --fill-color: rgb(71, 71, 71);
 }
 
 @keyframes background-pan {
@@ -231,4 +233,97 @@ a:hover {
     width: 80%;
     max-width: 1300px;
     margin: 0 auto;
+}
+
+.flower-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.flower-svg {
+    width: 100%;
+    height: auto;
+}
+
+.background-circle {
+    fill: var(--fill-color, lightgrey);
+    stroke: var(--stroke-color, darkgrey);
+    stroke-width: 2;
+    filter: url(#blur-stroke);
+    /* Apply the blur filter */
+}
+
+.unblurred-background-circle {
+    fill: var(--fill-color, lightgrey);
+    stroke: var(--stroke-color, darkgrey);
+    stroke-width: 2;
+    clip-path: url(#clip-circle);
+    /* Clip the blur */
+}
+
+.center-circle {
+    fill: var(--stroke-color, darkgrey);
+    stroke: var(--stroke-color, darkgrey);
+    stroke-width: 2;
+}
+
+.petal {
+    fill: transparent;
+    stroke: var(--stroke-color, darkgrey);
+    stroke-width: 2;
+    filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.5));
+}
+
+@keyframes rotate-slow {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes rotate-medium {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes rotate-fast {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.group-1 {
+    animation: rotate-slow 20s linear infinite;
+}
+
+.group-2 {
+    animation: rotate-medium 15s linear infinite;
+}
+
+.group-3 {
+    animation: rotate-medium 12s linear infinite;
+}
+
+.group-4 {
+    animation: rotate-fast 10s linear infinite;
+}
+
+.group-5 {
+    animation: rotate-fast 5s linear infinite;
 }

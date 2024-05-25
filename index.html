@@ -26,9 +26,81 @@
                     Leader</span><span class="emoji">🚀</span>, <span class="company-text">Company Builder</span><span class="emoji">🏗️</span>, and <span class="tech-text"><span>T</span><span>e</span><span>c</span><span>h</span><span> </span><span>L</span><span>o</span><span>v</span><span>e</span><span>r</span></span><span class="emoji">📱</span></h1>
         </section>
         <section class="details">
-            <p>I love products and am currently the Chief Product Officer @ a stealth AI company.<br> Prior to that, I spent ~12 years at <span class="google-text"><span class="google-blue">G</span><span class="google-red">o</span><span class="google-yellow">o</span><span class="google-blue">g</span><span class="google-green">l</span><span class="google-red">e</span></span> working primarily on AI. 🤖</p>
+            <p>I love products and am currently the Chief Product Officer @ a stealth AI company.<br> Prior to that, I spent ~12 years at <span class="google-text"><span class="google-blue">G</span><span class="google-red">o</span><span class="google-yellow">o</span><span class="google-blue">g</span><span class="google-green">l</span><span class="google-red">e</span></span> working primarily on ML & AI. 🤖</p>
             <p>Born in FL. College at Brown University 🐻. Currently reside outside of Seattle. </p>
             <p>⚽🎽🕹️🎸</p>
+        </section>
+        <section>
+            <div class="flower-container">
+                <svg viewBox="-100 -100 200 200" class="flower-svg">
+                    <!-- Define filter for blurring the stroke -->
+                    <defs>
+                        <filter id="blur-stroke" x="-50%" y="-50%" width="200%" height="200%">
+                            <feGaussianBlur in="SourceAlpha" stdDeviation="5" />
+                            <feOffset dx="0" dy="0" result="offsetblur" />
+                            <feFlood flood-color="black" result="color" />
+                            <feComposite in2="offsetblur" operator="in" />
+                            <feComposite in2="SourceAlpha" operator="in" />
+                            <feMerge>
+                                <feMergeNode in="SourceGraphic" />
+                                <feMergeNode />
+                            </feMerge>
+                        </filter>
+                        <clipPath id="clip-circle">
+                            <circle cx="0" cy="0" r="80" />
+                        </clipPath>
+                    </defs>
+            
+                    <!-- Background circle with blur -->
+                    <circle cx="0" cy="0" r="80" class="background-circle" />
+            
+                    <!-- Unblurred background circle to clip the blurring -->
+                    <circle cx="0" cy="0" r="80" class="unblurred-background-circle" clip-path="url(#clip-circle)" />
+            
+                    <!-- Group 1: largest petals -->
+                    <g class="petal-group group-1">
+                        <path d="M0,0 C20,30 40,50 0,78 C-40,50 -20,30 0,0" class="petal"></path>
+                        <path d="M0,0 C20,30 40,50 0,78 C-40,50 -20,30 0,0" class="petal" transform="rotate(90)"></path>
+                        <path d="M0,0 C20,30 40,50 0,78 C-40,50 -20,30 0,0" class="petal" transform="rotate(180)"></path>
+                        <path d="M0,0 C20,30 40,50 0,78 C-40,50 -20,30 0,0" class="petal" transform="rotate(270)"></path>
+                    </g>
+            
+                    <!-- Group 2: second largest petals -->
+                    <g class="petal-group group-2">
+                        <path d="M0,0 C17,25 34,43 0,70 C-34,43 -17,25 0,0" class="petal"></path>
+                        <path d="M0,0 C17,25 34,43 0,70 C-34,43 -17,25 0,0" class="petal" transform="rotate(90)"></path>
+                        <path d="M0,0 C17,25 34,43 0,70 C-34,43 -17,25 0,0" class="petal" transform="rotate(180)"></path>
+                        <path d="M0,0 C17,25 34,43 0,70 C-34,43 -17,25 0,0" class="petal" transform="rotate(270)"></path>
+                    </g>
+            
+                    <!-- Group 3: smaller petals -->
+                    <g class="petal-group group-3">
+                        <path d="M0,0 C15,22 30,37 0,60 C-30,37 -15,22 0,0" class="petal"></path>
+                        <path d="M0,0 C15,22 30,37 0,60 C-30,37 -15,22 0,0" class="petal" transform="rotate(90)"></path>
+                        <path d="M0,0 C15,22 30,37 0,60 C-30,37 -15,22 0,0" class="petal" transform="rotate(180)"></path>
+                        <path d="M0,0 C15,22 30,37 0,60 C-30,37 -15,22 0,0" class="petal" transform="rotate(270)"></path>
+                    </g>
+            
+                    <!-- Group 4: even smaller petals -->
+                    <g class="petal-group group-4">
+                        <path d="M0,0 C10,15 20,25 0,40 C-20,25 -10,15 0,0" class="petal"></path>
+                        <path d="M0,0 C10,15 20,25 0,40 C-20,25 -10,15 0,0" class="petal" transform="rotate(90)"></path>
+                        <path d="M0,0 C10,15 20,25 0,40 C-20,25 -10,15 0,0" class="petal" transform="rotate(180)"></path>
+                        <path d="M0,0 C10,15 20,25 0,40 C-20,25 -10,15 0,0" class="petal" transform="rotate(270)"></path>
+                    </g>
+            
+                    <!-- Group 5: smallest petals -->
+                    <g class="petal-group group-5">
+                        <path d="M0,0 C5,7 10,12 0,20 C-10,12 -5,7 0,0" class="petal"></path>
+                        <path d="M0,0 C5,7 10,12 0,20 C-10,12 -5,7 0,0" class="petal" transform="rotate(90)"></path>
+                        <path d="M0,0 C5,7 10,12 0,20 C-10,12 -5,7 0,0" class="petal" transform="rotate(180)"></path>
+                        <path d="M0,0 C5,7 10,12 0,20 C-10,12 -5,7 0,0" class="petal" transform="rotate(270)"></path>
+                    </g>
+            
+                    <!-- Center circle -->
+                    <circle cx="0" cy="0" r="5" class="center-circle" />
+                </svg>
+            </div>
         </section>
     </main>
     <script src="scripts.js"></script>
